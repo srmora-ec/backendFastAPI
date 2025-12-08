@@ -7,7 +7,7 @@ from schemas import ProductoSchema
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="eCommerce BIU 2025 API Productos")
+app = FastAPI(title="API eCommerce 2025")
 
 def get_db():
     db = SessionLocal()
@@ -28,4 +28,4 @@ app.include_router(router)
 
 @app.get("/")
 def root():
-    return {"message": "Commerce BIU 2025 API Productos"}
+    return {"message": "API eCommerce 2025"}
