@@ -47,7 +47,7 @@ pip install -r requirements.txt
 - **python-dotenv** → Para leer el archivo `.env`.
 - **fastapi-crudrouter** → Generación automática de rutas CRUD.
 
-### 5. Ejecuta el servidor
+### 5. Ejecuta el servidor local
 ```bash
 uvicorn main:app --reload
 ```
