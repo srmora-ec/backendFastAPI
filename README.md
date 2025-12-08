@@ -84,3 +84,10 @@ Los endpoints generados automáticamente son:
 - Recomendado usar **Docker** o un servicio MySQL local para pruebas.  
 
 ---
+
+## 👤 Autor
+
+**Cristian Zambrano**  
+📧 Email: cristian_uteq@hotmail.com
+
+---
