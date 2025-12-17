@@ -4,6 +4,7 @@ from fastapi_crudrouter import SQLAlchemyCRUDRouter
 from database import engine, Base, SessionLocal
 from models import Producto
 from schemas import ProductoSchema
+import subprocess
 
 Base.metadata.create_all(bind=engine)
 
