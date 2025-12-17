@@ -25,7 +25,7 @@ async def webhook(request: Request):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "Hola mundo, prueba definitiva!"}
+    return {"Hello": "Hola mundo, prueba definitiva 2!"}
 
 # CRUD automático para el modelo Producto
 router = SQLAlchemyCRUDRouter(
