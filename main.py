@@ -15,6 +15,12 @@ def get_db():
         yield db
     finally:
         db.close()
+@app.post("/webhook")
+async def webhook(request: Request):
+    payload = await request.json()
+    # script de deploy
+    subprocess.call(["/opt/bitnami/projects/backendFastAPI/deploy.sh"])
+    return {"status": "ok"}
 
 # CRUD automático para el modelo Producto
 router = SQLAlchemyCRUDRouter(
