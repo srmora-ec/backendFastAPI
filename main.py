@@ -22,6 +22,10 @@ async def webhook(request: Request):
     subprocess.call(["/opt/bitnami/projects/backendFastAPI/deploy.sh"])
     return {"status": "ok"}
 
+@app.get("/")
+def read_root():
+    return {"Hello": "Mundo Actualizado Automaticamente!"}
+
 # CRUD automático para el modelo Producto
 router = SQLAlchemyCRUDRouter(
     schema=ProductoSchema,   
